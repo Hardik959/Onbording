@@ -8,24 +8,18 @@ class UnbordingContent {
 
 List<UnbordingContent> contents = [
   UnbordingContent(
-    title: 'Quality Food',
-    image: 'images/quality.svg',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it "
-  ),
+      title: 'Quality Food',
+      image: 'images/bar.svg',
+      discription:
+          "Barclays traces its ancestry back to two goldsmith bankers, John Freame and Thomas Gould, who were doing business in Lombard Street, London in 1690. "),
   UnbordingContent(
-    title: 'Fast Delevery',
-    image: 'images/delevery.svg',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it "
-  ),
+      title: 'Fast Delevery',
+      image: 'images/baro.svg',
+      discription:
+          " In 1736, Freame’s son, Joseph took his brother-in-law, James Barclay on as a partner, and the name has remained a constant presence in the business ever since. "),
   UnbordingContent(
-    title: 'Reward surprises',
-    image: 'images/reward.svg',
-    discription: "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-    "industry's standard dummy text ever since the 1500s, "
-    "when an unknown printer took a galley of type and scrambled it "
-  ),
+      title: 'Reward surprises',
+      image: 'images/barp.svg',
+      discription:
+          "                                                                  Let's do some banking! "),
 ];

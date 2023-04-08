@@ -28,6 +28,8 @@ class _OnbordingState extends State<Onbording> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisSize: MainAxisSize.min,
         children: [
           Expanded(
             child: PageView.builder(
@@ -45,23 +47,24 @@ class _OnbordingState extends State<Onbording> {
                     children: [
                       SvgPicture.asset(
                         contents[i].image,
-                        height: 300,
+                        height: 275,
+                        width: 100,
                       ),
-                      Text(
-                        contents[i].title,
-                        style: TextStyle(
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      // Text(
+                      //   contents[i].title,
+                      //   style: TextStyle(
+                      //     fontSize: 35,
+                      //     fontWeight: FontWeight.bold,
+                      //   ),
+                      // ),
                       SizedBox(height: 20),
                       Text(
                         contents[i].discription,
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.grey,
-                        ),
+                            fontSize: 21,
+                            color: Colors.grey,
+                            fontStyle: FontStyle.italic),
                       )
                     ],
                   ),
@@ -99,7 +102,7 @@ class _OnbordingState extends State<Onbording> {
                   curve: Curves.bounceIn,
                 );
               },
-              color: Theme.of(context).primaryColor,
+              color: Colors.lightBlueAccent,
               textColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
@@ -117,9 +120,8 @@ class _OnbordingState extends State<Onbording> {
       width: currentIndex == index ? 25 : 10,
       margin: EdgeInsets.only(right: 5),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Theme.of(context).primaryColor,
-      ),
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.lightBlueAccent),
     );
   }
 }
